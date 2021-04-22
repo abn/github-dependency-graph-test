@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dgraph"
+version = "0.1.0"
+description = ""
+authors = ["Arun Babu Neelicattu <arun.neelicattu@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dgraph", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.17.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
